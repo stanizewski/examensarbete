@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="container d-none d-md-block">
+        <div class="container">
             <div class="row">
                 <div class="col-12 mt-4 mx-auto order-lg-1">
                     <div class="holder-textfield text-center">
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-        <div class="container d-none d-md-block">
+        <div class="container">
             <div class="row">
                 <div class="col-12 mx-auto">
                     <div class="holder-textfield text-center">

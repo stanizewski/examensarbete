@@ -6,70 +6,58 @@ Template Name: Minsida
 
 ?>
 <?php get_header()?>
-
+<section class="mypage">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-<picture>
-                             <img src="https://randomuser.me/api/portraits/men/5.jpg">
-                        </picture>
-<img src="<?php echo get_bloginfo('template_url'); ?>/images/icons/person_add.svg" class="">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-            <a href="/"><img src="<?php echo get_bloginfo('template_url'); ?>/images/image/loggo.png" class="logo"></a>
-                <h2> Min sida</h2>
-                </div>
-            </div>
+<div class="container my-page-top">
+    <div class="row">
+        <div class="col-12 text-center">
+            <img src="<?php echo get_bloginfo('template_url'); ?>/images/image/DSC_8639.JPG" class="mypage-img" height="300" width="400">
+            <h3>Patricia Stanizewski <img src="<?php echo get_bloginfo('template_url'); ?>/images/icons/person_add.svg" class=""></h3>
+            <p class="body-text"> Random text om mig själv, vem är jag? <br>förhoppningsvis väldigt rolig och njuter av livet. <br> Ge mitt ett bubbligt/mjukt glas rött så är jag nöjd.</p>
         </div>
-    
+    </div>
+</div>
+
 
 
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6 mx-auto">
-            <div class="blogg-top">
-                <span><a href="/vanner/">Mina vänner</a></span> <br><hr>
-                <span><a href="/Blogg/">Mina inlägg</a></span><br><hr>
-                <span><a href="/onskelista/">Önskelista</a></span><br><hr>
-                </div>
+        <div class="col-12 col-md-10 mx-auto">
+            <div class="blogg-top text-center">
+                <a href="/Blogg/"><input type="submit" class="btn secondary-btn" name="submit" value="Blogg"/></a>
+                <a href="/onskelista/"><input type="submit" class="btn secondary-btn" name="submit" value="Önskelista"/></a>
             </div>
         </div>
     </div>
+</div>
 
-   <!--  <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 mt-5">
-                <div class="blogg-scan">
-                    <h4 class="mt-5 text-center">Senaste skanningar</h4>
-                    <img src="<?php echo get_bloginfo('template_url'); ?>/images/image/IMG_1525.jpg" class="s-logo insta" width="300" height="400">
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-10 mt-5 mb-5 text-start">
+            <h3>Min Vänner</h3>
         </div>
- -->
         <?php include(TEMPLATE_DIR . '/addfriend.php'); ?>
+        <!-- <a href="#">Visa fler</a> -->
+    </div>
+</div>
 
-     <!-- <div class="container">
-        <div class="row">
-            <div class="col-12 mx-auto text-center">
-                <div class="blogg-profil">
-                    <h4>Din smakprofil</h4>
-                    <input type="submit" class="btn secondary-btn" name="submit" value="Stilar" />
-                    <input type="submit" class="btn secondary-btn" name="submit" value="Regioner" />
-                    <input type="submit" class="btn secondary-btn" name="submit" value="Högst betyg" />     <br>
-                    <span>Languedoc-Roussilion Röda</span><br>
-                    <p class="mx-auto">Betyg 4.5</p>
-                    <span>Franska röda</span><br>
-                    <p class="mx-auto">Betyg 3.8</p>
-                    <span>Centrala Italien vita</span><br>
-                    <p class="mx-auto">Betyg 4.2</p>
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-start mb-5">
+            <h3>Min instagram</h3>
         </div>
-    </div> -->
+    </div>
+</div>
 
-    <?php echo do_shortcode( '[instagram-feed]' ); ?>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-start mb-5">
+            <?php echo do_shortcode( '[instagram-feed]' ); ?>
+        </div>
+    </div>
+</div>
+</section>
 
 <?php get_footer()?>

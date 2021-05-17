@@ -18,7 +18,6 @@ function register_menu() {
 }
 add_action( 'init', 'register_menu' );
 
-
 function cc_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
@@ -61,7 +60,7 @@ function my_acf_init() {
 	}
 }
 
-/* include("register.php");
-include("login.php") */
+/*include("register.php");
+include("login.php")*/
 
 ?>

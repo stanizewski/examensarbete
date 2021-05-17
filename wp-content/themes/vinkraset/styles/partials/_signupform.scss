@@ -6,13 +6,28 @@
   height: 400px;
   background-size: 500px;
   position: relative;
-  right: 200px;
+  right: 60px;
   input {
     margin: 10px;
-    margin-right: 50px;
+    margin-right: -50px;
   }
 
   #loginbutton {
     margin-top: 20px;
+  }
+}
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(xxl) {
+  .wrapper-signupform {
+    right: 200px;
+    input {
+      margin-right: 50px;
+    }
+
+    #loginbutton {
+      margin-top: 20px;
+    }
   }
 }

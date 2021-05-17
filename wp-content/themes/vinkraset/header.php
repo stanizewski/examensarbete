@@ -23,17 +23,13 @@
 
 <body <?php body_class() ?>>
 <header>
-
     <div class="wrapper-nav">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
-                
-                <div class="col offset-4 offset-md-0 text-center text-md-start">
-                <img src="<?php echo get_bloginfo('template_url'); ?>/images/image/loggo1.png" class="logo">
+                <div class="col offset-md-0 text-md-start">
+                    <img src="<?php echo get_bloginfo('template_url'); ?>/images/image/loggo1.png" class="logo">
                 </div>
-
-
-                <div class="col ms-auto order-md-3">
+                <div class="col ms-auto order-md-3  d-none d-md-block">
                     <div class=" topmenu d-flex justify-content-end align-items-center">
                         <a href="<?php echo BLOGG_URL; ?>" class="topmenu-mypage">
                             <span><?php echo __('Min sida', 'Vinkraset'); ?></span>
@@ -55,27 +51,16 @@
                         <div class="nav-icon"></div>
                     </div>
                 </div>
-               
-
-
 
                 <nav class="mobile-nav">
-                   
-
-
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'header-menu',
                     ));
                     ?>
                 </nav>
-
-
             </div>
         </div>
-
-
-
     </div>
 
 </header>

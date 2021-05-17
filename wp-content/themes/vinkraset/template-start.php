@@ -9,18 +9,18 @@ Template Name: Startsida
 
 <?php include(TEMPLATE_DIR . '/start-top.php'); ?>
 
-        <div class="wrapper">  
-            <div class="container"> 
-                <div class="row">   
-                    <div class="start-text"> 
-                      <div class="col-12 col-md-10 mt-5 mx-auto">    
-                        <h1>Välkommna</h1>
-                        <p class="text-regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sunt nobis repudiandae nam at ex, minus tempore laboriosam distinctio in qui sint deserunt, nisi dicta officiis, velit debitis obcaecati doloremque.   </p>
-                   </div>
-                </div>
-            </div>
+<div class="wrapper">  
+  <div class="container"> 
+    <div class="row">   
+      <div class="start-text"> 
+        <div class="col-12 col-md-8 mt-5 mx-auto text-center">    
+          <h3 class="d-none d-md-block">Vin är förmodligen den äldsta naturliga dryck vi alltjämt njuter av.</h3>
+          <p class="body-text-small mt-3 mb-5">Vi på Vinkraset vill göra det enklare för dig att spara dina favoritviner på ett roligare sätt.  <br> Dela dina tankar, bilder och nyfikenhet om naturviner i dina alldles egna vindagbok. Så det är bara att köra igång!!</p>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 
 <div class="masonry">
   <div class="item">
@@ -63,10 +63,8 @@ Template Name: Startsida
     <img src="<?php echo get_bloginfo('template_url'); ?>/images/image/holidaywine.webp" class="">
   </div>
 </div>
-
-        
-  <?php include(TEMPLATE_DIR . '/partials/flexible-content-style.php'); ?>
-  <?php include(TEMPLATE_DIR . '/partials/start/start-inspiration.php'); ?>
-
+     
+<?php include(TEMPLATE_DIR . '/partials/flexible-content-style.php'); ?>
+<?php include(TEMPLATE_DIR . '/partials/start/start-inspiration.php'); ?>
 
 <?php get_footer()?>

@@ -5,7 +5,6 @@
 
     header("location:index.php"); 
 
-
 ?> 
 
-<!-- Den här sidan tar han om logout funktionen  -->
+<!-- Den här sidan tar hand om logout funktionen  -->
