@@ -1,0 +1,130 @@
+.topmenu {
+  bottom: 0;
+  z-index: 120;
+  width: 100%;
+  justify-content: center;
+
+  > div,
+  > a {
+    cursor: pointer;
+    flex-wrap: wrap;
+    width: percentage(1/5);
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+      content: "";
+      height: 25px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 5px;
+      width: 100%;
+      display: block;
+      color: black;
+    }
+    &.topmenu-wine::before {
+      background-image: url(wine_black.svg);
+      height: 35px;
+    }
+    &.topmenu-blogg::before {
+      background-image: url(blogg.svg);
+      height: 35px;
+    }
+    &.topmenu-cider::before {
+      height: 35px;
+      background-image: url(icon-cider.svg);
+    }
+    &.topmenu-mypage::before {
+      height: 35px;
+      background-image: url(mypage.svg);
+    }
+
+    &.active::before,
+    &:hover::before {
+      color: $color-black;
+    }
+
+    span:last-child {
+      bottom: 0;
+      font-size: 9px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      word-wrap: none;
+      overflow: hidden;
+      width: 100%;
+      display: block;
+      font-family: $body-text;
+      color: $color-black;
+      transition: color ease-out 100ms;
+    }
+    &.active span:last-child,
+    &:hover span:last-child {
+      color: $color-black;
+    }
+
+    i {
+      display: block;
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      top: 5px;
+      left: 50%;
+      border-radius: 50%;
+      background-color: $color-black;
+      color: $color-white;
+      text-align: center;
+      line-height: 19px;
+      font-size: 10px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.8;
+      letter-spacing: 0.7px;
+      /* font-family: $bold-font; */
+    }
+    i:empty {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .topmenu {
+    > div,
+    > a {
+      span:last-child {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .topmenu {
+    > div,
+    > a {
+      &::before {
+        height: 30px;
+      }
+
+      span:last-child {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .topmenu {
+    > div,
+    > a {
+      &::before {
+        height: 35px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.wrapper-start-top {
+  position: relative;
+
+  .holder-start-btn {
+    width: 310px;
+    margin: 0 auto;
+  }
+
+  .holder-btn {
+    position: absolute;
+    top: calc(50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+  }
+
+  .wrapper-start-text {
+    top: calc(50% + 70px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    h1 {
+      color: $color-white;
+    }
+
+    p {
+      color: $color-white;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .wrapper-start-top {
+    .holder-btn {
+      top: calc(50%);
+    }
+
+    .wrapper-start-text {
+      top: calc(50% + 75px);
+    }
+  }
+}

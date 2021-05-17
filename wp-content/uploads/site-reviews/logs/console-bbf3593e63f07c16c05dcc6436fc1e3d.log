@@ -1,0 +1,220 @@
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_3_0_0] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_4_0_2] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_4_4_0] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_4_5_0] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_5_0_0] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_5_2_0] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_5_3_0] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_5_9_0] has run successfully
+[2021-05-15 09:13:29] DEBUG [Modules\Migrate:152] [Migrate_5_10_3] has run successfully
+[2021-05-15 09:19:11] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [email] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [name] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 09:31:53] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 11:58:14] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 12:03:56] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 12:12:22] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 12:19:32] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 12:27:19] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 12:27:55] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+
+[2021-05-15 12:30:12] DEBUG [Modules\Validator\DefaultValidator:58] Array
+(
+    [content] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [rating] => Array
+        (
+            [0] => This field is required.
+        )
+
+    [terms] => Array
+        (
+            [0] => This field must be accepted.
+        )
+
+    [title] => Array
+        (
+            [0] => This field is required.
+        )
+
+)
+

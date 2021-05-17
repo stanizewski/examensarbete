@@ -1,0 +1,45 @@
+.list {
+  .icon span:after {
+    font-family: "Material Icons";
+    color: $color-primary;
+    padding-left: 10px;
+    vertical-align: middle;
+    font-size: 19px;
+  }
+
+  .icon.toggle-down {
+    span {
+      &:after {
+        content: "keyboard_arrow_down";
+        cursor: pointer;
+      }
+    }
+
+    &.toggle-up-arrow {
+      span {
+        &:after {
+          content: "keyboard_arrow_up";
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .icon.toggle-up span:after {
+    content: "keyboard_arrow_up";
+    cursor: pointer;
+  }
+
+  .icon.chevron-right span:after {
+    content: "chevron_right";
+    cursor: pointer;
+  }
+  .icon.mail span:after {
+    content: "mail";
+    cursor: pointer;
+  }
+  .icon.phone span:after {
+    content: "phone";
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,109 @@
+.blogg-top {
+  span:after {
+    content: url(navigate.svg);
+    font-family: "Material Icons";
+    padding-left: 10px;
+    vertical-align: end;
+  }
+}
+
+.blogg-scan {
+  width: 100%;
+  height: 320px;
+  background-color: #f2c1cc;
+  border-radius: 50% 50% 49% 51% / 10% 10% 90% 90%;
+  margin-bottom: 50px;
+  h4 {
+    padding-top: 10px;
+  }
+  img {
+    margin-left: 144px;
+  }
+}
+
+.blogg-profil {
+  input {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  p {
+    width: 17%;
+    font-size: 14px;
+    background-color: pink;
+    box-shadow: 1px 5px #888888;
+    border-radius: 50%;
+    margin-left: 510px;
+  }
+  span {
+    font-family: "Papyrus";
+  }
+}
+
+p::before {
+  font-family: FontAwesome;
+  display: inline-block;
+  padding-right: 6px;
+  vertical-align: middle;
+}
+
+p::before {
+  content: "";
+}
+
+#sb_instagram img {
+  opacity: 1 !important;
+}
+
+@include media-breakpoint-up(xxl) {
+  .blogg-top {
+    span:after {
+      content: url(navigate.svg);
+      font-family: "Material Icons";
+      padding-left: 10px;
+      vertical-align: end;
+    }
+  }
+
+  .blogg-scan {
+    width: 100%;
+    height: 320px;
+    background-color: #f2c1cc;
+    border-radius: 50% 50% 49% 51% / 10% 10% 90% 90%;
+    margin-bottom: 50px;
+    h4 {
+      padding-top: 10px;
+    }
+    img {
+      margin-left: 144px;
+    }
+  }
+
+  .blogg-profil {
+    input {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+    p {
+      width: 7%;
+      font-size: 14px;
+      background-color: pink;
+      box-shadow: 1px 5px #888888;
+      border-radius: 50%;
+      margin-left: 510px;
+    }
+    span {
+      font-family: "Papyrus";
+    }
+  }
+
+  p::before {
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle;
+  }
+
+  p::before {
+    content: "";
+  }
+}

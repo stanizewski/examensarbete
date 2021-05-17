@@ -1,0 +1,79 @@
+footer {
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  .holder-input-footer {
+    background-color: $color-secondary;
+    margin-bottom: $gutter-1;
+    margin-top: 50px;
+    height: 55px;
+  }
+
+  .input-group {
+    margin-top: 80px;
+  }
+
+  .material-icons {
+    font-size: 25px;
+    line-height: 19px;
+  }
+
+  .holder-textfield {
+    margin-top: 20px;
+    p {
+      font-size: 12px;
+      line-height: 16px;
+      font-family: $body-text;
+      color: $color-black;
+    }
+
+    a {
+      color: #a1b1c8;
+
+      &:hover {
+        color: blue;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .s-logo {
+    height: 19px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  footer {
+    .s-logo {
+      height: 40px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  footer {
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  footer {
+    .s-logo {
+      height: 40px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  footer {
+    padding-bottom: 30px;
+
+    .holder-input-footer {
+      height: 65px;
+    }
+
+    .holder-textfield {
+      margin-top: 0px;
+    }
+  }
+}

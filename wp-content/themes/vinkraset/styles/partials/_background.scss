@@ -1,0 +1,101 @@
+.background {
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+
+  &.top {
+    background-position: top;
+  }
+
+  &.center {
+    background-position: center center;
+  }
+
+  &.cover {
+    background-size: cover;
+  }
+
+  &.pb-100 {
+    padding-bottom: 100%;
+  }
+
+  &.top-image {
+    height: 630px;
+    background-blend-mode: multiply;
+    position: relative;
+  }
+}
+
+.container-big-top-image {
+  padding: 0px;
+  margin-top: -15px;
+
+  > .row {
+    margin: 0px;
+
+    > div {
+      padding: 0px;
+    }
+  }
+}
+
+.big-image {
+  padding-bottom: 100%;
+}
+.holder-btn {
+  margin-top: -25px;
+  z-index: 99;
+  position: relative;
+}
+
+@include media-breakpoint-up(sm) {
+  .container-big-top-image {
+    margin-top: -30px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .background {
+    &.top-image {
+      height: 730px;
+    }
+  }
+}
+
+.container-big-top-image {
+  margin-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  > .row {
+    margin: initial;
+
+    > div {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  .big-image {
+    padding-bottom: 0px;
+    height: 267px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .background {
+    &.top-image {
+      height: 719px;
+    }
+
+    &.article-image {
+      height: 495px;
+    }
+  }
+
+  .container-big-top-image {
+    .big-image {
+      height: 494px;
+    }
+  }
+}

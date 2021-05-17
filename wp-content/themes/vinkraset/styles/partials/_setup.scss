@@ -1,0 +1,481 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-white;
+}
+
+@mixin headline-one($screensize: xs) {
+  margin: 0 0 15px 0;
+  @if $screensize == xl {
+    font-size: 60px;
+    letter-spacing: 0.3px;
+    line-height: 70px;
+  } @else if $screensize == lg {
+    font-size: 60px;
+    letter-spacing: 0.3px;
+    line-height: 70px;
+  } @else if $screensize == md {
+    font-size: 50px;
+    letter-spacing: 0.3px;
+    line-height: 60px;
+  } @else if $screensize == sm {
+    font-size: 38px;
+    letter-spacing: 0.3px;
+    line-height: 45px;
+  } @else {
+    font-size: 38px;
+    letter-spacing: 0.3px;
+    line-height: 45px;
+  }
+}
+
+// H2
+@mixin headline-two($screensize: xs) {
+  margin: 0 0 15px 0;
+  @if $screensize == xl {
+    font-size: 40px;
+    letter-spacing: -0.3px;
+    line-height: 50px;
+  } @else if $screensize == lg {
+    font-size: 40px;
+    letter-spacing: -0.3px;
+    line-height: 50px;
+  } @else if $screensize == md {
+    font-size: 40px;
+    letter-spacing: -0.3px;
+    line-height: 50px;
+  } @else if $screensize == sm {
+    font-size: 28px;
+    letter-spacing: -0.3px;
+    line-height: 40px;
+  } @else {
+    font-size: 28px;
+    letter-spacing: -0.3px;
+    line-height: 40px;
+  }
+}
+
+// H3
+@mixin subheadline-three($screensize: xs) {
+  margin: 0 0 15px 0;
+  @if $screensize == xl {
+    font-size: 25px;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+  } @else if $screensize == lg {
+    font-size: 25px;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+  } @else if $screensize == md {
+    font-size: 22px;
+    letter-spacing: 0.4px;
+    line-height: 25px;
+  } @else if $screensize == sm {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+  } @else {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+  }
+}
+
+// H4
+@mixin headline-four($screensize: xs) {
+  margin: 0 0 15px 0;
+  @if $screensize == xl {
+    font-size: 25px;
+    letter-spacing: -0.4px;
+    line-height: 25px;
+  } @else if $screensize == lg {
+    font-size: 25px;
+    letter-spacing: -0.4px;
+    line-height: 25px;
+  } @else if $screensize == md {
+    font-size: 25px;
+    letter-spacing: -0.4px;
+    line-height: 25px;
+  } @else if $screensize == sm {
+    font-size: 20px;
+    letter-spacing: -0.32px;
+    line-height: 29px;
+  } @else {
+    font-size: 20px;
+    letter-spacing: -0.32px;
+    line-height: 29px;
+  }
+}
+
+// H5
+@mixin headline-five($screensize: xs) {
+  margin: 0 0 15px 0;
+  @if $screensize == xl {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else if $screensize == lg {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else if $screensize == md {
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else if $screensize == sm {
+    font-size: 15px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else {
+    font-size: 15px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  }
+}
+
+// H6
+@mixin headline-six($screensize: xs) {
+  margin: 0 0 15px 0;
+  @if $screensize == xl {
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else if $screensize == lg {
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else if $screensize == md {
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else if $screensize == sm {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  } @else {
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    line-height: 37px;
+  }
+}
+
+h1,
+.h1 {
+  @include headline-one();
+}
+
+h2 {
+  @include headline-two();
+}
+
+h3 {
+  @include subheadline-three();
+}
+
+h4 {
+  @include headline-four();
+}
+
+h5 {
+  @include headline-five();
+}
+
+h6 {
+  @include headline-six();
+}
+
+@include media-breakpoint-up(sm) {
+  h1,
+  .h1 {
+    @include headline-one(sm);
+  }
+
+  h2 {
+    @include headline-two(sm);
+  }
+
+  h3 {
+    @include subheadline-three(sm);
+  }
+
+  h4 {
+    @include headline-four(sm);
+  }
+
+  h5 {
+    @include headline-five(sm);
+  }
+
+  h6 {
+    @include headline-six(sm);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  h1,
+  .h1 {
+    @include headline-one(md);
+  }
+
+  h2 {
+    @include headline-two(md);
+  }
+
+  h3 {
+    @include subheadline-three(md);
+  }
+
+  h4 {
+    @include headline-four(md);
+  }
+
+  h5 {
+    @include headline-five(md);
+  }
+
+  h6 {
+    @include headline-six(md);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1,
+  .h1 {
+    @include headline-one(lg);
+  }
+
+  h2 {
+    @include headline-two(lg);
+  }
+
+  h3 {
+    @include subheadline-three(lg);
+  }
+
+  h4 {
+    @include headline-four(lg);
+  }
+
+  h5 {
+    @include headline-five(lg);
+  }
+
+  h6 {
+    @include headline-six(lg);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  h1,
+  .h1 {
+    @include headline-one(xl);
+  }
+
+  h2 {
+    @include headline-two(xl);
+  }
+
+  h3 {
+    @include subheadline-three(xl);
+  }
+
+  h4 {
+    @include headline-four(xl);
+  }
+
+  h5 {
+    @include headline-five(xl);
+  }
+
+  h6 {
+    @include headline-six(xl);
+  }
+}
+
+@mixin text-regular($screensize: xs) {
+  @if $screensize == xl {
+    font-size: 17px;
+    letter-spacing: -0.25px;
+    line-height: 25px;
+  } @else if $screensize == lg {
+    font-size: 17px;
+    letter-spacing: -0.25px;
+    line-height: 25px;
+  } @else if $screensize == md {
+    font-size: 17px;
+    letter-spacing: -0.25px;
+    line-height: 25px;
+  } @else if $screensize == sm {
+    font-size: 15px;
+    letter-spacing: -0.25px;
+    line-height: 22px;
+  } @else {
+    font-size: 15px;
+    letter-spacing: -0.25px;
+    line-height: 22px;
+  }
+}
+
+@mixin text-large($screensize: xs) {
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  @if $screensize == xl {
+    font-size: 22px;
+    letter-spacing: -0.3px;
+    line-height: 37px;
+  } @else if $screensize == lg {
+    font-size: 22px;
+    letter-spacing: -0.3px;
+    line-height: 37px;
+  } @else if $screensize == md {
+    font-size: 22px;
+    letter-spacing: -0.3px;
+    line-height: 37px;
+  } @else if $screensize == sm {
+    font-size: 18px;
+    letter-spacing: -0.13px;
+    line-height: 26px;
+  } @else {
+    font-size: 18px;
+    letter-spacing: -0.13px;
+    line-height: 26px;
+  }
+}
+
+@mixin text-medium($screensize: xs) {
+  @if $screensize == xl {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+  } @else if $screensize == lg {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  } @else if $screensize == md {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+  } @else if $screensize == sm {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+  } @else {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+  }
+}
+
+@mixin text-small($screensize: xs) {
+  @if $screensize == xl {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+  } @else if $screensize == lg {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+  } @else if $screensize == md {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+  } @else if $screensize == sm {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+  } @else {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 28px;
+  }
+}
+
+p,
+.text-regular {
+  @include text-regular(xs);
+}
+
+p.text-small {
+  @include text-medium(xs);
+}
+
+p.text-medium {
+  @include text-medium(xs);
+}
+
+p.text-large {
+  @include text-large(xs);
+}
+
+@include media-breakpoint-up(sm) {
+  p,
+  .text-regular {
+    @include text-regular(sm);
+  }
+
+  p.text-small {
+    @include text-small(sm);
+  }
+
+  p.text-medium {
+    @include text-medium(sm);
+  }
+
+  p.text-large {
+    @include text-large(sm);
+  }
+}
+
+@include media-breakpoint-up(md) {
+  p {
+    @include text-regular(md);
+  }
+  p.text-small {
+    @include text-small(md);
+  }
+
+  p.text-medium {
+    @include text-medium(md);
+  }
+
+  p.text-large {
+    @include text-large(md);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  p {
+    @include text-regular(lg);
+  }
+
+  p.text-small {
+    @include text-small(lg);
+  }
+
+  p.text-medium {
+    @include text-medium(lg);
+  }
+
+  p.text-large {
+    @include text-large(lg);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  p {
+    @include text-regular(xl);
+  }
+
+  p.text-small {
+    @include text-small(xl);
+  }
+
+  p.text-medium {
+    @include text-medium(xl);
+  }
+
+  p.text-large {
+    @include text-large(xl);
+  }
+}

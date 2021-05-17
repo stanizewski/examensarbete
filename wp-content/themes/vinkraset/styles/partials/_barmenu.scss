@@ -1,0 +1,111 @@
+.barmenu {
+  position: fixed;
+  bottom: 0;
+  z-index: 120;
+  width: 100%;
+  height: 71px;
+  background: #fbfbfb;
+  backdrop-filter: blur(27.2px);
+  // background-color: rgba(247, 247, 247, 0.5);
+  display: flex;
+  align-items: stretch;
+  > div,
+  > a {
+    text-align: center;
+    display: block;
+    position: relative;
+    flex-grow: 1;
+    cursor: pointer;
+    //color: $colruor-secondary;
+
+    &::before {
+      content: "";
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin-top: 5px;
+      width: 100%;
+      display: block;
+      color: black;
+    }
+
+    &.barmenu-find::before {
+      background-image: $icon-find-gym;
+    }
+    &.barmenu-member::before {
+      background-image: $icon-member;
+    }
+    &.barmenu-cart::before {
+      background-image: $icon-basket;
+    }
+    &.barmenu-tryout-form::before {
+      background-image: $icon-tryout;
+    }
+    &.barmenu-support::before {
+      background-image: $icon-service;
+    }
+
+    &.active::before,
+    &:hover::before {
+      color: black;
+    }
+
+    i {
+      display: block;
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      top: 5px;
+      left: 50%;
+      border-radius: 50%;
+      background-color: pink;
+      color: #fff;
+      text-align: center;
+      line-height: 19px;
+      font-size: 10px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.8;
+      letter-spacing: 0.7px;
+      // font-family: $bold-font;
+    }
+    i:empty {
+      display: none;
+    }
+
+    span {
+      position: absolute;
+      top: 35px;
+      font-size: 10px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.16px;
+      text-align: center;
+      word-wrap: none;
+      overflow: hidden;
+      width: 100%;
+      display: block;
+      color: black;
+      transition: color ease-out 100ms;
+
+      &:hover,
+      &:active {
+        color: black;
+      }
+    }
+    &.active span:last-child,
+    &:hover span:last-child {
+      color: black;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .barmenu,
+  .slideup {
+    display: none;
+  }
+}

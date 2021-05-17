@@ -1,0 +1,202 @@
+.section-headline {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+
+  &.shmb {
+    margin-bottom: 10px;
+  }
+
+  &.closed {
+    margin-bottom: 0px;
+  }
+
+  &:after {
+    content: "";
+    background-color: black;
+    display: block;
+    height: 1px;
+    width: calc(100%);
+    position: absolute;
+    bottom: 0;
+  }
+
+  h6 {
+    color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+    user-select: none;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+  }
+
+  &.white {
+    h4 {
+      color: white;
+    }
+  }
+
+  &.toggle-icon [data-toggle] {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 20px;
+    height: 50px;
+    transform: translateY(-50%);
+    &:before {
+      font-family: "Material Icons";
+      color: red;
+      font-size: 19px;
+      line-height: 50px;
+      content: "remove_circle";
+    }
+    &.locked {
+      cursor: default;
+    }
+  }
+
+  &.toggle-icon.closed {
+    [data-toggle]:before {
+      content: "add_circle";
+    }
+  }
+
+  &.toggle-icon-arrow [data-toggle] {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 20px;
+    height: 50px;
+    transform: translateY(-50%);
+    &:before {
+      font-family: "Material Icons";
+      color: red;
+      font-size: 19px;
+      line-height: 50px;
+      content: "keyboard_arrow_down";
+    }
+    &.locked {
+      cursor: default;
+    }
+  }
+
+  &.toggle-icon-arrow.closed {
+    [data-toggle]:before {
+      content: "keyboard_arrow_up";
+    }
+  }
+
+  > div {
+    > span,
+    > a {
+      /* font-family: $body-text; */
+      font-size: 12px;
+      letter-spacing: 0px;
+      line-height: 50px;
+      cursor: pointer;
+      color: red;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-right: 35px;
+      display: block;
+    }
+  }
+
+  .icon {
+    &:after {
+      font-family: "Material Icons";
+      color: red;
+      font-size: 19px;
+      margin-left: 10px;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .icon-filter {
+    &:after {
+      content: "filter_alt";
+    }
+  }
+  .icon-map {
+    &:after {
+      content: "place";
+    }
+  }
+
+  .icon-done {
+    &:after {
+      content: "done";
+    }
+  }
+
+  .icon-unfold-more {
+    &:after {
+      content: "unfold_more";
+    }
+  }
+
+  .icon-right {
+    &:after {
+      content: "chevron_right";
+      margin: 1px 0 0;
+    }
+  }
+
+  .icon-search {
+    &:after {
+      content: "search";
+      margin: 1px 0 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .section-headline {
+    height: 60px;
+
+    &.shmb {
+      margin-bottom: 20px;
+    }
+
+    &.closed {
+      margin-bottom: 0px;
+    }
+
+    &.toggle-icon [data-toggle] {
+      cursor: pointer;
+      height: 60px;
+      &:before {
+        line-height: 60px;
+        content: "remove_circle";
+      }
+      &.locked {
+        cursor: default;
+      }
+    }
+
+    > div {
+      > span,
+      > a {
+        /* font-family: $body-text; */
+        font-size: 16px;
+        letter-spacing: -0.5px;
+      }
+    }
+  }
+}

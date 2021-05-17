@@ -1,0 +1,35 @@
+.blogg-input {
+  background-image: url("./images/image/wineglas-start.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 200px;
+  position: relative;
+}
+
+.form-group {
+  .form-titel,
+  .form-date,
+  .form-who,
+  .form-where,
+  .form-decription {
+    margin: 20px;
+    color: $color-primary;
+  }
+
+  .form-decription {
+    height: 200px;
+    width: 100%;
+  }
+
+  input {
+    color: $color-primary;
+    font-family: $body-text;
+  }
+}
+
+.form-check {
+  p {
+    font-size: 12px;
+  }
+}

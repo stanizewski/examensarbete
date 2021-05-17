@@ -1,0 +1,18 @@
+/*!
+Theme Name: Texas Digital Theme Template
+Theme URI: https://www.texasdigital.se
+Author: Texas Digital Agency
+Author URI: https://www.texasdigital.se/
+Version: 1.0
+Text Domain: tda
+*/
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss", "partials/variables",
+  "partials/fonts", "partials/setup", "partials/main-content", "partials/header",
+  "partials/footer", "partials/buttons", "partials/template-start",
+  "partials/page-start", "partials/background", "partials/topmenu",
+  "partials/svg", "partials/section-headline", "partials/barmenu",
+  "partials/text-image-block", "partials/loginForm", "partials/type",
+  "partials/blogg-form", "partials/mypage.scss", "partials/list-feature-icons",
+  "partials/wishlist", "partials/signupform", "partials/blogg",
+  "partials/addfriend";
